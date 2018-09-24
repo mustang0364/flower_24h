@@ -1,0 +1,229 @@
+body {
+background: white
+}
+.homelogo {
+	-webkit-animation: rotation 20s infinite linear;
+	height: 280px;
+	width: auto;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+  }
+
+.image1{
+	max-width: 100%;
+	height: auto;
+}
+
+
+  .logoname{
+  height: 250px;
+	width: auto;
+	position: absolute;
+	top: 26px;
+	left: 28px;
+	}
+	.logo{
+		height: 280px;
+		width: auto;
+		position: absolute;
+		top: 15px;
+		left: 15px;
+	}
+		.menu{
+    height: 80px;
+	width: auto;
+	position: absolute;
+	top: 10px;
+	right: 0.1px;
+}
+.container{
+	height: 300px;
+	background: red
+	
+
+
+}
+
+ 
+	h1{
+		color:whitesmoke;
+		hover:red
+
+	}
+	@media (max-width: 500px) {
+		.homelogo  {
+			display: none;
+		}
+		.logoname{
+			display: none;
+		}
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.pic-wrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow:hidden;
+	}
+	
+	figure {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity:0;
+		/*animation*/
+		
+		animation: slideShow 24s linear infinite 0s;
+		-o-animation: slideShow 24s linear infinite 0s;
+		-moz-animation: slideShow 24s linear infinite 0s;
+		-webkit-animation: slideShow 24s linear infinite 0s;
+	}
+	
+	.pic-1 {
+		opacity: 1;
+		background: url("https://images.unsplash.com/photo-1529573813483-53bd9ede667e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=93e5821237d2d73af4ac719a8fdb5f83&auto=format&fit=crop&w=800&q=60") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	.pic-2 {
+		animation-delay: 6s;
+		-o-animation-delay: 6s;
+		-moz--animation-delay: 6s;
+		-webkit-animation-delay: 6s;
+		background: url("https://images.unsplash.com/photo-1527487253850-19ea84ee398e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b821d2c3773e599b699e890027925900&auto=format&fit=crop&w=800&q=60") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		/* background-size: cover; */
+	}
+	
+	.pic-3 {
+		animation-delay: 12s;
+		-o-animation-delay: 12s;
+		-moz--animation-delay: 12s;
+		-webkit-animation-delay: 12s;
+		background: url("https://images.unsplash.com/photo-1515619363794-e826f7de3487?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f6f776b087a6b7a1b77d93f04d3c4e64&auto=format&fit=crop&w=800&q=60") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	.pic-4 {
+		animation-delay: 18s;
+		-o-animation-delay: 18s;
+		-moz--animation-delay: 18s;
+		-webkit-animation-delay: 18s;
+		background: url("http://placehold.it/900/77046a/fff?text=slide+4") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	/* keyframes*/
+	
+	@keyframes slideShow {
+		0% {
+			opacity: 0;
+			transform:scale(1);
+			-ms-transform:scale(1);
+		}
+		4% {
+			opacity: 1
+		}
+		24% {
+			opacity: 1;    
+		}
+		28% {
+			opacity: 0;
+			transform:scale(1.1);
+			-ms-transform:scale(1.1);
+		}
+		100% {
+			opacity: 0;
+			transform:scale(1);
+			-ms-transformm:scale(1);
+		}    
+	 }
+	
+	@-o-keyframes slideShow {
+		 0% {
+			opacity: 0;
+			-o-transform:scale(1);
+		}
+		4% {
+			opacity: 1
+		}
+		24% {
+			opacity: 1;    
+		}
+		28% {
+			opacity: 0;
+			-o-transform:scale(1.1);
+		}
+		100% {
+			opacity: 0;
+			-o-transformm:scale(1);    
+		}
+	}
+	
+	@-moz-keyframes slideShow {
+		 0% {
+			opacity: 0;
+			-moz-transform:scale(1);
+		}
+		4% {
+			opacity: 1
+		}
+		24% {
+			opacity: 1;    
+		}
+		28% {
+			opacity: 0;
+			-moz-transform:scale(1.1);
+		}
+		100% {
+			opacity: 0;
+			-moz-transformm:scale(1);    
+		}
+	}
+	
+	@-webkit-keyframes slideShow {
+		0% {
+			opacity: 0;
+			-webkit-transform:scale(1);
+		}
+		4% {
+			opacity: 1
+		}
+		24% {
+			opacity: 1;    
+		}
+		28% {
+			opacity: 0;
+			-webkit-transform:scale(1.1);
+		}
+		100% {
+			opacity: 0;
+			-webkit-transformm:scale(1);    
+		}
+	}
