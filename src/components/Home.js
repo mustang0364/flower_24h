@@ -17,18 +17,23 @@ class Home extends Component {
     state = {  }
     render() { 
         return ( 
-            <div>
-                <img   className="homelogo" src={logoCircle}/>
+        
+                  <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#">Business</a>
+            <a href="#">Services</a>
+            <a href="#">Learn More</a>
+            <a href="#"><span>Free Trial</span></a>
+        </div>
+                 <img   className="homelogo" src={logoCircle}/>
                 <img className="logoname" src={logoname}/>
                 <img  className="image1"  src={beach2}/>
-
-        
-
-                <br/>
-                <div className="container"> 
-                    
-                <h2 className="helloW">At NB Flowers we create stunning floral displays for events, parties, corporate clients, weddings and private residencies. Our approach to what we do is an expression of our deep love of flowers. Their ever-changing nature as we move through the seasons offers
-                 endless fresh inspiration for designs full of beauty, fun and drama.
+               
+            <div className="container"> 
+                    <h2 className= "helloW" >At NB Flowers we create stunning floral displays for events, parties, corporate clients, weddings and private residencies. Our approach to what we do is an expression of our deep love of flowers. Their ever-changing nature as we move through the seasons offers
+                        endless fresh inspiration for designs full of beauty, fun and drama.
                  </h2>
                 </div>
                 <br/>
